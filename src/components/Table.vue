@@ -1,8 +1,8 @@
 <template>
   <v-container>
     <v-row>
-        <v-col cols="12"><h1>Puertos Marítimos</h1></v-col>
-      
+      <v-col cols="12"><h2 class="text-center">Puertos Marítimos</h2></v-col>
+
       <v-col>
         <v-card>
           <v-card-title>
@@ -35,14 +35,8 @@ export default {
   data: function () {
     return {
       search: "",
-      sortBy:'name',
-      keys:[
-          'Id',
-          'Name',
-          'Country',
-          'Continent',
-          'Coordinates'
-      ],
+      sortBy: "name",
+      keys: ["Id", "Name", "Country", "Continent", "Coordinates"],
       headers: [
         {
           text: "Id",
